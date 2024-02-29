@@ -20,7 +20,7 @@ public class Categoria {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	
-	@NotBlank (message = "O atributo tipo é obrigatório")
+	@NotBlank (message = "O atributo nome é obrigatório")
 	private String nome;
 	
 	@OneToMany(fetch = FetchType.LAZY, mappedBy = "categoria", cascade = CascadeType.REMOVE)
